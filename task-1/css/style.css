@@ -1,21 +1,35 @@
+:root {
+	--color-black: #000000;
+}
+/*
+1. Вынести цвета в переменные и медиа выражения тоже
+2. Проставить медиа выражения согласно стандартам
+3. Добавить пунктам меню паддинг
+4. Придумать hover и состояние active для элементов
+5. Добавить ссылки для карточек
+6. Доработать название классов body__
+*/
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
 }
 
 body {
-	max-width: 1440px;
-	margin: 0 auto;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	min-height: 100vh;
 }
 
-.wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .main {
@@ -82,15 +96,20 @@ body {
 	flex-grow: 1;
 }
 
-.body_el-inner {
+.body__grid {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin: -20px;
 }
 
-.body_el-content {
+.body__el-content {
 	width: 25%;
-	padding: 20px   ;
+	padding: 20px;
+}
+
+.body__el-img {
+	width: 100%;
 }
 
 .body_profile-photo {
@@ -99,7 +118,6 @@ body {
 }
 
 .body_profile-content {
-	position: absolute;
 	padding: 0 50px;
 }
 
@@ -225,25 +243,18 @@ body {
 	transform: translateY(-50%);
 }
 
-@media (max-width: 1440px) {
-
-	.body_el-inner {
-		margin: -20px;
+@media (max-width: 1023px) {
+	.body__el-inner {
+		margin: -10px;
 	}
-
-	.body_el-content {
-		width: 25%;
-		padding: 20px;
+	.body__el-content {
+		width: 50%;
+		padding: 10px;
 	}
 }
 
-@media (max-width: 1223px) {
-	.body_el-inner {
-		margin: -20px;
-	}
-
-	.body_el-content {
-		width: 50%;
-		padding: 10px;
+@media (max-width: 767px) {
+	.body__el-content {
+		width: 100%;
 	}
 }
