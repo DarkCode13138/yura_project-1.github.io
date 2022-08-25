@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background: darkgray;
+}
+
+.container {
+   max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.task_part_two {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+}
+
+.task_inner {
+    width: 110px;
+    height: 100px;
+    background: black;
+}
+
+.task_inner:nth-child(2n) {
+    background: white;
+}
+
+
