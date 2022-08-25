@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: "Cera Pro";
 }
 
 .wrapper {
@@ -21,10 +20,11 @@ body {
 
 .main {
     flex: 1 1 auto;
+    margin: 100px 0;
 }
 
 .container {
-    padding-bottom: 20px;
+    padding: 0 20px;
 }
 .title_el {
     display: flex;
@@ -85,10 +85,12 @@ body {
 .body_el-inner {
     display: flex;
     justify-content: space-between;
+    margin: -20px;
 }
 
 .body_el-content {
-    top: 172px;
+    width: 25%;
+    padding: 20px   ;
 }
 
 .body_profile-photo {
@@ -172,4 +174,76 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
+}
+
+.burger {
+    display: none;
+}
+
+.burger {
+    background: none;
+    border: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: auto;
+}
+
+@media (max-width: 1023px) {
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+.burger:after,
+.burger:before {
+    content: '';
+}
+
+.burger:after,
+.burger:before,
+.burger span {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    top: 0;
+    display: block;
+    position: absolute;
+}
+
+.burger:after {
+    top: 100%;
+}
+
+.burger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 1440px) {
+
+    .body_el-inner {
+        margin: -20px;
+    }
+
+    .body_el-content {
+        width: 25%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1223px) {
+    .body_el-inner {
+        margin: -20px;
+    }
+
+    .body_el-content {
+        width: 50%;
+        padding: 10px;
+    }
 }
