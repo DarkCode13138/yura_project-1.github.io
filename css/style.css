@@ -4,13 +4,12 @@
 }
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-family: "Cera Pro";
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .wrapper {
@@ -20,16 +19,13 @@ body {
 }
 
 .main {
-    flex: 1 1 auto;
-    margin: 100px 0;
+	flex: 1 1 auto;
+	margin: 100px 0;
 }
 
 .container {
-    padding: 0 20px;
-	flex: 1 1 auto;
+	padding: 0 20px;
 }
-
-
 .title_el {
 	display: flex;
 	justify-content: space-between;
@@ -39,7 +35,7 @@ body {
 	padding: 43px 0;
 	font-size: 30px;
 	font-weight: 500;
-	font-family: 'Georgia', Serif;
+	font-family: 'Georgia' ,Serif;
 }
 
 .title_el-icons {
@@ -87,16 +83,14 @@ body {
 }
 
 .body_el-inner {
-    display: flex;
-    justify-content: space-between;
-    margin: -20px;
+	display: flex;
+	justify-content: space-between;
+	margin: -20px;
 }
 
 .body_el-content {
-    width: 25%;
-    padding: 20px   ;
-    display: flex;
-    justify-content: space-between;
+	width: 25%;
+	padding: 20px   ;
 }
 
 .body_profile-photo {
@@ -174,82 +168,82 @@ body {
 }
 
 .footer_number {
-    padding-left: 200px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
+	padding-left: 200px;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
 }
 
 .burger {
-    display: none;
+	display: none;
 }
 
 .burger {
-    background: none;
-    border: none;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    margin-left: auto;
+	background: none;
+	border: none;
+	position: relative;
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	margin-left: auto;
 }
 
 @media (max-width: 1023px) {
-    .menu {
-        display: none;
-    }
+	.menu {
+		display: none;
+	}
 
-    .burger {
-        display: block;
-    }
+	.burger {
+		display: block;
+	}
 }
 
 .burger:after,
 .burger:before {
-    content: '';
+	content: '';
 }
 
 .burger:after,
 .burger:before,
 .burger span {
-    width: 100%;
-    height: 3px;
-    background: #000;
-    top: 0;
-    display: block;
-    position: absolute;
+	width: 100%;
+	height: 3px;
+	background: #000;
+	top: 0;
+	display: block;
+	position: absolute;
 }
 
 .burger:after {
-    top: 100%;
+	top: 100%;
 }
 
 .burger span {
-    top: 50%;
-    transform: translateY(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 @media (max-width: 1440px) {
 
-    .body_el-inner {
-        margin: -20px;
-    }
+	.body_el-inner {
+		margin: -20px;
+	}
 
-    .body_el-content {
-        width: 25%;
-        padding: 20px;
-    }
+	.body_el-content {
+		width: 25%;
+		padding: 20px;
+	}
 }
 
 @media (max-width: 1223px) {
-    .body_el-inner {
-        margin: -20px;
-    }
+	.body_el-inner {
+		margin: -20px;
+	}
 
-    .body_el-content {
-        width: 50%;
-        padding: 10px;
-    }
+	.body_el-content {
+		width: 50%;
+		padding: 10px;
+	}
 }
